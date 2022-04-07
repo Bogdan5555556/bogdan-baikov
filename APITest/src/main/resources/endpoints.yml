@@ -1,0 +1,18 @@
+endpoints:
+  baseUrl: http://localhost:8080/api/v3
+  pets:
+    basicEndpoint: pet
+    findByStatus: pet/findByStatus
+    findByTags: pet/findByTags
+    petId: pet/{pet_id}
+    uploadImage: pet/{pet_id}/uploadImage
+  store:
+    inventory: store/inventory
+    order: store/order
+    orderById: store/order/{orderId}
+  user:
+    user: user
+    createWithList: user/createWithList
+    login: user/login
+    logout: user/logout
+    userByName: user/{username}
