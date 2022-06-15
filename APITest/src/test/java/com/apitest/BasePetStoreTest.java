@@ -24,18 +24,4 @@ public class BasePetStoreTest {
     public void prepareDefaultHeaders() {
         headers = new HttpHeaders();
     }
-
-//    @BeforeEach
-//    public void deleteAllTriangles() {
-//        ResponseEntity<TriangleResponseModel[]> allTriangles = restService.getForObject(baseUrl, headers, TriangleResponseModel[].class, "/triangle/all");
-//        Arrays.stream(Objects.requireNonNull(allTriangles.getBody())).forEach(triangle -> {
-//            restService.deleteForObject(baseUrl, headers, TriangleResponseModel[].class, "/triangle", triangle.getId());
-//        });
-//    }
-
-//    @Step("Create triangle with input {input} and separator {separator}.")
-//    public ResponseEntity<TriangleResponseModel> createTriangle(String input, String separator) {
-//        TriangleRequestModel triangle = TriangleRequestModel.builder().input(input).separator(separator).build();
-//        return restService.postForObject(baseUrl, "/triangle", headers, triangle, TriangleResponseModel.class);
-//    }
 }
